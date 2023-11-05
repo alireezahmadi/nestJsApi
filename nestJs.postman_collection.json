@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "4e3cac42-7b73-4525-90a4-34e9cb99c510",
+		"name": "nestJs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26290553"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NTQ3NDdlMTA5YmUzZGU1MjI2ZTBjNmMiLCJlbWFpbCI6Ijc4ZjhkNjY0ZjFAZW1haWxib3hpLmxpdmUiLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2OTkxNzA0MDgsImV4cCI6MTY5OTE3MTMwOH0.gOdH4gnuU1g6ef8B6Vpi8mAD52rVL3ZN1pHxXfRrojg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"user@gmail.com\", \r\n    \"password\":\"user532\",\r\n    \"roles\":\"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NTQ3NGFjMmI5MWNiOGYzMmViNmFkNmYiLCJlbWFpbCI6InVzZXJAZ21haWwuY29tIiwicm9sZXMiOlsidXNlciJdLCJpYXQiOjE2OTkxNzEwMjEsImV4cCI6MTY5OTE3MTkyMX0.jlpTirx_Wz1rjhm1zEWg31b9jhL_RrQy8sHjx6L72O4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"roles\":\"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/user@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"user@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByEmail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NTQ3NGFjMmI5MWNiOGYzMmViNmFkNmYiLCJlbWFpbCI6InVzZXJAZ21haWwuY29tIiwicm9sZXMiOlsidXNlciJdLCJpYXQiOjE2OTkxNzEwMjEsImV4cCI6MTY5OTE3MTkyMX0.jlpTirx_Wz1rjhm1zEWg31b9jhL_RrQy8sHjx6L72O4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/user@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"user@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NTQ3NGFjMmI5MWNiOGYzMmViNmFkNmYiLCJlbWFpbCI6InVzZXJAZ21haWwuY29tIiwicm9sZXMiOlsidXNlciJdLCJpYXQiOjE2OTkxNzEwMjEsImV4cCI6MTY5OTE3MTkyMX0.jlpTirx_Wz1rjhm1zEWg31b9jhL_RrQy8sHjx6L72O4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NTQ3NDdlMTA5YmUzZGU1MjI2ZTBjNmMiLCJlbWFpbCI6Ijc4ZjhkNjY0ZjFAZW1haWxib3hpLmxpdmUiLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE2OTkxNzAyNzMsImV4cCI6MTY5OTE3MTE3M30.DgIHE3DEO6FfEqyCeihnilEkTrHn9fpSG90sPWMCV14",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/user@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"user@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"f09ee27513@emailboxi.live\", \r\n    \"password\":\"admin6532\",\r\n    \"roles\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signIn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
