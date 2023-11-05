@@ -24,7 +24,17 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<p>Develop a server-side service, exactly like the https://reqres.in service, using the following technologies.</p>
+<ul>
+  <li>NodeJs</li>
+  <li>NestJs</li>
+  <li>Class Validator</li>
+  <li>MongoDB</li>
+  <li>Mongoose</li>
+  <li>JWT and Gaurds are used for authentication in Nest</li>
+  <li>Argon to hash passwords</li>
+  <li>A Nest Library for sending emails through Gmail that can be used in application modules</li>
+</ul>
 
 ## Installation
 
@@ -58,16 +68,3 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
