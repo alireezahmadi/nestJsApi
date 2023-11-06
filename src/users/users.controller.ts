@@ -45,8 +45,7 @@ export class UsersController {
     }
 
 
-    @HasRoles(Role.Admin, Role.User)
-    @UseGuards(AccessTokenGuard, RolesGuard, IsAdminOrOwnerGuard)
+    @UseGuards(AccessTokenGuard, IsAdminOrOwnerGuard)
     @Get(':email')
     @ApiResponse({
         status:200,
@@ -64,8 +63,7 @@ export class UsersController {
         return this.userService.findByEmail(email)
     } 
 
-    @HasRoles(Role.Admin, Role.User)
-    @UseGuards(AccessTokenGuard, RolesGuard, IsAdminOrOwnerGuard)
+    @UseGuards(AccessTokenGuard, IsAdminOrOwnerGuard)
     @Patch(':email')
     @ApiResponse({
         status:200,
