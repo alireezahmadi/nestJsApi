@@ -6,7 +6,7 @@ import { join } from 'path';
 @Module({
   imports:[
     MailerModule.forRoot({
-      transport: "smtps://alirezaahmadi000216@gmail.com:ivy489545@smtp.gmail.com",
+      transport: "smtps://user@domain.com:pass@smtp.domain.com",
       template:{
         dir: join(__dirname,'/templates/'), 
         adapter: new EjsAdapter(), 
